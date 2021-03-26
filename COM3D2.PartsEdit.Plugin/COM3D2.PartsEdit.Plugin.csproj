@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77124D3C-4A58-4B11-B4D6-225F531DD379}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>COM3D2.PartsEdit.Plugin</RootNamespace>
+    <AssemblyName>COM3D2.PartsEdit.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>F:\COM3D2\COM3D2x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ExIni">
+      <HintPath>F:\COM3D2\COM3D2x64_Data\Managed\ExIni.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>F:\COM3D2\COM3D2x64_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>F:\COM3D2\COM3D2x64_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>F:\COM3D2\COM3D2x64_Data\Managed\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>F:\COM3D2\COM3D2x64_Data\Managed\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>F:\COM3D2\COM3D2x64_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityInjector">
+      <HintPath>..\..\..\com3d2\_plugin\cm3d2_j_154\Sybaris\UnityInjector.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoneRendererAssist.cs" />
+    <Compile Include="BoneUtil.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BackUpBoneData.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BackUpData.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BackUpMaidData.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BackUpObjectData.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BackUpSlotData.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BodyBoneDisplay.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BoneDisplay.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BoneDisplaySettingUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BoneDropDownSelect.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BoneEdit.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BoneEditUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\BoneGizmoRenderer.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\CommonUIData.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\ExportUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\EXSlot.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\FinishUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\GizmoSettingUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\GizmoType.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\ImportUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\MaidObjectUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\MaidSelectUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\MaidSlotSelectUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\Mode.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\MultipleMaidObjectSelectUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\ObjectData.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\ObjectEditUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\PartsEdit.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\PartsEditPlugin.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\PresetFileData.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\PresetManager.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\SceneDataManager.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\Setting.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\SettingUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\SkinnedMeshObjectEditUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\SkinnedMeshObjectSelectUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\TargetSelectModeUI.cs" />
+    <Compile Include="CM3D2\PartsEdit\Plugin\TargetType.cs" />
+    <Compile Include="ColorUtil.cs" />
+    <Compile Include="ComboBox.cs" />
+    <Compile Include="ComboBoxBase.cs" />
+    <Compile Include="ComboBoxLO.cs" />
+    <Compile Include="CopyTransform.cs" />
+    <Compile Include="ExGizmoRenderer.cs" />
+    <Compile Include="GearMenu\Buttons.cs" />
+    <Compile Include="GearMenu\DefaultIcon.cs" />
+    <Compile Include="GearWindowSystem.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="IniUtil.cs" />
+    <Compile Include="IUIDrawer.cs" />
+    <Compile Include="MaidObserver.cs" />
+    <Compile Include="MaidUtil.cs" />
+    <Compile Include="PluginInfo.cs" />
+    <Compile Include="PngData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioButton.cs" />
+    <Compile Include="ScaleButton.cs" />
+    <Compile Include="SlotUtil.cs" />
+    <Compile Include="TransformUtil.cs" />
+    <Compile Include="UIParams.cs" />
+    <Compile Include="UIRadioButton.cs" />
+    <Compile Include="UIUtil.cs" />
+    <Compile Include="UIWindow.cs" />
+    <Compile Include="YureUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CM3D2\PartsEdit\Plugin\PngResource\GearIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
